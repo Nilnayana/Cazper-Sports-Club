@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazper Sports Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loaded {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-loader">
+        <div class="loader"></div>
+    </div>
+    <!-- Hero Section with Background Image -->
+    <header class="hero">
+        <nav>
+            <div class="logo">
+                <img src="logo.webp" alt="Cazper Sports Club Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="club.html">The Club</a></li>
+                <li><a href="coaching.html">Coaching</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="join.html" class="btn-primary">Join Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+         <div  class="hero-content">
+            <h1>Welcome to Cazper Sports Club</h1>
+            <p>Where Excellence Meets Performance</p>
+            <br><a href="#facilities" class="btn-primary">Explore Our Facilities</a>
+        </div> 
+    </header>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <h2 class="section-title">Our World-Class Facilities</h2>
+        <div class="facility-grid">
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="ground.jpg" alt="Sports Ground">
+                </div>
+                <div class="facility-content">
+                    <h3>Sports Ground</h3>
+                    <p>FIFA-standard football pitch with advanced drainage system and premium artificial turf</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="bar.jpg" alt="Club Bar">
+                </div>
+                <div class="facility-content">
+                    <h3>Premium Club Bar</h3>
+                    <p>Elegant social space with panoramic views of the grounds and premium refreshments</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="pool.jpg" alt="Swimming Pool">
+                </div>
+                <div class="facility-content">
+                    <h3>Olympic Pool</h3>
+                    <p>Temperature-controlled 50m pool with professional timing systems</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <div class="facility-image">
+                    <img src="gym.jpg" alt="Gymnasium">
+                </div>
+                <div class="facility-content">
+                    <h3>Modern Gym</h3>
+                    <p>State-of-the-art equipment with personal training and fitness assessment</p>
+                    <a href="#" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section with Parallax -->
+    <section class="history parallax">
+        <div class="history-content">
+            <h2>Our Legacy of Excellence</h2>
+            <p>Since 1985, Cazper Sports Club has been at the forefront of sporting excellence. From humble beginnings, we've grown into one of the region's premier sporting institutions, nurturing talent and promoting wellness in our community.</p>
+            <br><a href="about.html" class="btn-primary">Discover Our Story</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@cazpersportsclub.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Sports Avenue<br>City, Country</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday: 6:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 7:00 AM - 8:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cazper Sports Club. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html> 
